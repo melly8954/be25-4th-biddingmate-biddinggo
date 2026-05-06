@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins-external
+  namespace: biddinggo
+spec:
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8081
