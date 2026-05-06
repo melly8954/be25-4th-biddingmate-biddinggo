@@ -10,9 +10,9 @@ spec:
   tls:
   - secretName: biddinggo-api-tls-secret
     hosts:
-    - api.bidding-go.com
+    - api.bidding-go.shop
   rules:
-  - host: api.bidding-go.com
+  - host: api.bidding-go.shop
     http:
       paths:
       - pathType: Prefix
