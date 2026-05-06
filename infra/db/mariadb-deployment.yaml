@@ -18,8 +18,8 @@ spec:
         image: mariadb:11.8.5
         resources:
           requests:
-            memory: "512Mi"
-            cpu: "500m"
+            memory: "256Mi"
+            cpu: "100m"
           limits:
             memory: "1Gi"
             cpu: "1000m"
