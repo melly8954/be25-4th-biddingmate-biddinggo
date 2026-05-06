@@ -3,8 +3,15 @@ kind: Ingress
 metadata:
   name: jenkins-ingress
   namespace: biddinggo
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   ingressClassName: nginx
+  tls:
+    - hosts:
+        - jenkins.bidding-go.shop
+      secretName: jenkins-tls
+
   rules:
     - host: jenkins.bidding-go.shop
       http:
