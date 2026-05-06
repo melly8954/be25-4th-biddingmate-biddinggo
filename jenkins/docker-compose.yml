@@ -16,5 +16,8 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - /usr/bin/docker:/usr/bin/docker
 
+    group_add:
+      - "<docker_gid>"
+
 volumes:
   jenkins_home:
