@@ -14,9 +14,9 @@ spec:
   tls:
   - secretName: argocd-tls-secret
     hosts:
-    - argocd.beyond.com
+    - argocd.bidding-go.shop
   rules:
-  - host: argocd.beyond.com
+  - host: argocd.bidding-go.shop
     http:
       paths:
       - pathType: Prefix
