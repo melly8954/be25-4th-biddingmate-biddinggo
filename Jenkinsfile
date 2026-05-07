@@ -5,7 +5,7 @@ pipeline {
     FRONTEND_JOB = 'biddinggo-frontend'
     BACKEND_JOB = 'biddinggo-backend'
     GHCR_REGISTRY = 'ghcr.io'
-    GHCR_OWNER = 'nueeaeel'
+    GHCR_OWNER = 'melly8954'
     FRONTEND_IMAGE = "${GHCR_REGISTRY}/${GHCR_OWNER}/biddinggo-frontend"
     BACKEND_IMAGE = "${GHCR_REGISTRY}/${GHCR_OWNER}/biddinggo-backend"
     FRONTEND_DEPLOYMENT_MANIFEST = 'infra/k8s/frontend/deployment.yaml'
